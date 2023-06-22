@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/99e4a8e3d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Translator Application</h1>
+        <div class="wrapper">
+            <text-input class="text_input">
+                <textarea class="from_text" placeholder="Enter text"></textarea>
+                <textarea class="to_text" placeholder="Enter text" readonly disabled></textarea>
+            </text-input>
+            <ul class="controls">
+                <!-- From -->
+                <li class="row from">
+                    <div class="icons">
+                        <i id="from" class="fas fa-volume-up"></i>
+                        <i id="from" class="fas fa-copy"></i>
+                    </div>
+                    <select>
+                        <!-- <option value="en-GB">English</option> -->
+                    </select>
+                </li>
+
+                <!-- Launguage Exchanger -->
+                <div class="exchange"><i class="fas fa-exchange-alt"></i></div>
+
+                <!-- To -->
+                <li class="row to">
+                    <select></select>
+                    <div class="icons">
+                        <i id="to" class="fas fa-volume-up"></i>
+                        <i id="to" class="fas fa-copy"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button>Translate Text</button>
+    </div>
+
+    <script src="contries.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
